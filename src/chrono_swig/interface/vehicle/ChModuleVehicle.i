@@ -35,6 +35,7 @@
 #include <vector>
 
 #include "chrono/core/ChQuaternion.h"
+#include "chrono/core/ChVector2.h"
 #include "chrono/core/ChVector3.h"
 #include "chrono/core/ChCoordsys.h"
 #include "chrono/core/ChFrame.h"
@@ -64,7 +65,6 @@
 #include "chrono/collision/ChCollisionSystem.h"
 
 #include "chrono_vehicle/ChApiVehicle.h"
-#include "chrono_vehicle/ChVehicleJoint.h"
 #include "chrono_vehicle/ChVehicle.h"
 #include "chrono_vehicle/ChSubsysDefs.h"
 #include "chrono_vehicle/ChVehicleOutput.h"
@@ -90,6 +90,7 @@
 
 #include "chrono_vehicle/wheeled_vehicle/ChAxle.h"
 
+#include "chrono_vehicle/wheeled_vehicle/ChSpindle.h"
 #include "chrono_vehicle/wheeled_vehicle/ChBrake.h"
 #include "chrono_vehicle/wheeled_vehicle/brake/ChBrakeSimple.h"
 #include "chrono_vehicle/wheeled_vehicle/brake/ChBrakeShafts.h"
@@ -199,6 +200,7 @@ using namespace chrono::vehicle::m113;
 
 
 %import(module = "pychrono.core") "chrono_swig/interface/core/ChClassFactory.i"
+%import(module = "pychrono.core") "chrono_swig/interface/core/ChVector2.i"
 %import(module = "pychrono.core") "chrono_swig/interface/core/ChVector3.i"
 %import(module = "pychrono.core") "chrono_swig/interface/core/ChQuaternion.i"
 %import(module = "pychrono.core") "chrono_swig/interface/core/ChCoordsys.i"
@@ -252,9 +254,9 @@ Before adding a shared_ptr, mark as shared ptr all its inheritance tree in the m
 %shared_ptr(chrono::vehicle::ChBrakeShafts)
 %shared_ptr(chrono::vehicle::BrakeSimple)
 %shared_ptr(chrono::vehicle::BrakeShafts)
-%shared_ptr(chrono::vehicle::ChVehicleJoint)
 %shared_ptr(chrono::vehicle::ChVehicle)
 %shared_ptr(chrono::vehicle::ChAxle)
+%shared_ptr(chrono::vehicle::ChSpindle)
 %shared_ptr(chrono::vehicle::ChWheeledVehicle)
 %shared_ptr(chrono::vehicle::ChWheeledTrailer)
 %shared_ptr(chrono::vehicle::WheeledVehicle)
@@ -370,9 +372,6 @@ Before adding a shared_ptr, mark as shared ptr all its inheritance tree in the m
 %include "ChDriveline.i"
 
 
-
-%include "../../../chrono_vehicle/ChVehicleJoint.h"
-
 %include "../../../chrono_vehicle/wheeled_vehicle/ChWheel.h"
 %include "../../../chrono_vehicle/wheeled_vehicle/wheel/Wheel.h"
 
@@ -385,6 +384,7 @@ Before adding a shared_ptr, mark as shared ptr all its inheritance tree in the m
 %include "ChTire.i"
 
 %include "../../../chrono_vehicle/wheeled_vehicle/ChAxle.h"
+%include "../../../chrono_vehicle/wheeled_vehicle/ChSpindle.h"
 
 %include "../../../chrono_vehicle/wheeled_vehicle/ChWheeledVehicle.h"
 %include "../../../chrono_vehicle/wheeled_vehicle/ChWheeledTrailer.h"

@@ -5,6 +5,9 @@ Change Log
 ==========
 
 - [Unreleased (development branch)](#unreleased-development-branch)
+  - [\[Added\] Chrono::Peridynamics module](#added-chronoperidynamics-module) 
+  - [\[Added\] Chrono::VSG plugins for FSI and granular dynamics visualization](#added-chronovsg-plugins-for-fsi-and-granular-dynamics-visualization)
+  - [\[Added\] New Chrono::VSG features and capabilities](#added-new-chronovsg-features-and-capabilities)
   - [\[Changed\] Refactoring of Chrono CMake build system](#changed-refactoring-of-chrono-cmake-build-system) 
   - [\[Added\] Support for modeling components with internal dynamics (DAE)](#added-support-for-modeling-components-with-internal-dynamics-dae)
   - [\[Changed\] Eigensolvers refactoring](#eigensolvers-refactoring)
@@ -113,6 +116,18 @@ Change Log
 - [Release 4.0.0 (2019-02-22)](#release-400-2019-02-22)
 
 # Unreleased (development branch)
+
+## [Added] Chrono::Peridynamics module
+
+**TODO**
+
+## [Added] Chrono::VSG plugins for FSI and granular dynamics visualization
+
+**TODO**
+
+## [Added] New Chrono::VSG features and capabilities
+
+**TODO**
 
 ## [Changed] Refactoring of Chrono CMake build system
 
@@ -1834,7 +1849,7 @@ The Functional Mock-up Interface is an open (tool-independent) standard for exch
 
 FMI support in Chrono is provided via (1) `fmu-tools`, a general-purpose, stand-alone library for exporting and importing FMUs and (2) `Chrono::FMI`, a module with Chrono-specific extensions to facilitate working with FMU variables wrapping Chrono types.
 
-At this time, only the FMI 2.0 standard is supported (with FMI 3.0 support coming later). The stand-alone `fmu_tools` library provides support for exporting and importing both *Co-Simulation* and *Model Exchange* FMUs.  Currently, `Chrono:FMI` focuses only on Co-Simulation FMUs. 
+At this time, only the FMI 2.0 standard is supported (with FMI 3.0 support coming later). The stand-alone `fmu-forge` library provides support for exporting and importing both *Co-Simulation* and *Model Exchange* FMUs.  Currently, `Chrono:FMI` focuses only on Co-Simulation FMUs. 
 
 ## [Added] Chrono::Sensor features and updates
 
